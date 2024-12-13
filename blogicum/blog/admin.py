@@ -24,6 +24,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'is_published',
     )
 
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = (
@@ -51,6 +52,7 @@ class CommentAdmin(admin.ModelAdmin):
         'post'
     )
 
+
 @admin.register(Location)
 class LocationAdmin(admin.ModelAdmin):
     list_display = (
@@ -61,4 +63,3 @@ class LocationAdmin(admin.ModelAdmin):
     list_editable = (
         'is_published',
     )
-
